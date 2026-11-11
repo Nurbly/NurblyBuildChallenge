@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>Share image source</title>
+  <!-- Source for assets/share.png, the 1200 by 630 link preview image. The README says how to rebuild it. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      padding: 64px 80px;
+      display: flex;
+      flex-direction: column;
+      color: #e8ecf4;
+      font-family: "DM Sans", system-ui, "Segoe UI", sans-serif;
+      font-weight: 500;
+      background:
+        radial-gradient(ellipse 80% 70% at 50% -10%, rgba(41, 82, 255, 0.34), transparent),
+        linear-gradient(rgba(99, 118, 148, 0.09) 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(90deg, rgba(99, 118, 148, 0.09) 1px, transparent 1px) 0 0 / 40px 40px,
+        #0b0d12;
+    }
+    .brand { display: flex; align-items: center; gap: 16px; font-size: 30px; font-weight: 700; }
+    .brand span { color: #8b94ad; font-weight: 500; }
+    h1 { margin: auto 0 0; font-size: 92px; line-height: 1.05; font-weight: 700; letter-spacing: -0.02em; }
+    .grad {
+      background: linear-gradient(90deg, #527dff, #8aaaff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .facts { display: flex; gap: 64px; margin: 44px 0 0; padding: 0; list-style: none; }
+    .facts strong { display: block; font-size: 40px; line-height: 1.2; font-weight: 700; }
+    .facts span { color: #8b94ad; font-size: 24px; }
+  </style>
+</head>
+<body>
+  <div class="brand">
+    <svg width="48" height="48" viewBox="0 0 160 160" aria-hidden="true">
+      <g transform="translate(10 7.2) scale(1.4)">
+        <path d="M28 85 L28 43 C28 11 72 11 72 43 L72 85" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>
+    <div>Nurbly <span>Build Challenge</span></div>
+  </div>
+  <h1>Design a drone in six months. <span class="grad">In public.</span></h1>
+  <!-- Keep these in step with the facts in the hero of index.html. -->
+  <ul class="facts">
+    <li><strong>$3,000</strong> <span>in cash prizes</span></li>
+    <li><strong>6</strong> <span>monthly stages</span></li>
+    <li><strong>Free</strong> <span>to enter</span></li>
+    <li><strong>1 Mar 2027</strong> <span>Stage 1 opens</span></li>
+  </ul>
+</body>
+</html>

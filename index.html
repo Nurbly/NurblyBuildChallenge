@@ -11,6 +11,19 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <title>Nurbly Build Challenge</title>
   <meta name="description" content="A six-month virtual CAD design competition. Design one complete drone in six monthly stages, every file versioned in a public, open source Nurbly repo.">
+  <!-- Link preview for chat apps and social sites. assets/share.png is built from tools/share-image.html. -->
+  <link rel="canonical" href="https://build.nurbly.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nurbly Build Challenge">
+  <meta property="og:title" content="Design a drone in six months. In public.">
+  <meta property="og:description" content="Six monthly stages, one complete drone, $3,000 in cash prizes. Free to enter with any CAD tool, and no physical build required.">
+  <meta property="og:url" content="https://build.nurbly.com/">
+  <meta property="og:image" content="https://build.nurbly.com/assets/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nurbly Build Challenge. Design a drone in six months, in public.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b0d12">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -26,6 +39,13 @@
       <img src="assets/logo.svg" alt="Nurbly logo" width="32" height="32">
       <span>Nurbly <span class="muted">Build Challenge</span></span>
     </a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#prizes">Prizes</a>
+      <a href="#stages">Stages</a>
+      <a href="#judging">Judging</a>
+      <a href="#faq">FAQ</a>
+      <a data-link="rules" href="#">Rules</a>
+    </nav>
     <a class="btn btn-primary" data-link="register" href="#">Register</a>
   </div>
 </header>
@@ -34,14 +54,17 @@
   <div class="wrap">
     <h1>Design a drone in six months. <span class="grad">In public.</span></h1>
     <p class="lead">
-      Six monthly stages. One complete drone. Every file versioned in a public, open source Nurbly repo,
-      so your whole design history is on the record. Teams can be any size, and Nurbly is
-      free for every team.
+      Six monthly stages, one complete drone. Every file lives in a public, open source repo on Nurbly,
+      version control for CAD that keeps every revision and shows STEP models in 3D in the browser.
+      No physical build required, and any CAD tool works.
     </p>
-    <p class="lead lead-2">
-      Nurbly is version control for CAD. It keeps every revision of your files and shows STEP
-      models in 3D right in the browser. No physical build required, and any CAD tool works.
-    </p>
+    <!-- Keep these four facts in step with the prizes and dates below, and with assets/share.png. -->
+    <ul class="facts">
+      <li><strong>$3,000</strong> <span>in cash prizes</span></li>
+      <li><strong>6</strong> <span>monthly stages</span></li>
+      <li><strong>Free</strong> <span>to enter, any team size</span></li>
+      <li><strong>1 Mar 2027</strong> <span>Stage 1 opens</span></li>
+    </ul>
     <div class="actions">
       <a class="btn btn-primary btn-lg" data-link="register" href="#">Register your team</a>
       <a class="btn btn-outline btn-lg" href="#stages">See the stages</a>
@@ -92,24 +115,31 @@
   <section id="enter">
     <h2>How to enter</h2>
     <div class="grid grid-4">
+      <!-- The registration form asks for a Nurbly username, so the account comes first. -->
       <div class="card">
         <p class="label">Step 1</p>
-        <p class="copy"><a data-link="register" href="#">Register your team</a>.</p>
+        <p class="copy">Make a free account at <a href="https://nurbly.com">nurbly.com</a>.</p>
       </div>
       <div class="card">
         <p class="label">Step 2</p>
-        <p class="copy">Make a free Nurbly account and a public repo with <code>nbc-2027</code> in its name or description. Add an open source license.</p>
+        <p class="copy"><a data-link="register" href="#">Register your team</a>. One form per team, filled
+        in by the team lead.</p>
       </div>
       <div class="card">
         <p class="label">Step 3</p>
-        <p class="copy">Each month, upload your STEP files and notes on your decisions.</p>
+        <p class="copy">Create a public repo with <code>nbc-2027</code> in its name or description. Add an
+        open source license.</p>
       </div>
       <div class="card">
         <p class="label">Step 4</p>
-        <p class="copy">Before the deadline, tag the version you're submitting <code>stage-N</code>.</p>
+        <p class="copy">Each month, upload your STEP files and notes on your decisions. Tag the version
+        you're submitting <code>stage-N</code> before the deadline.</p>
       </div>
     </div>
-    <p class="note">A few words you'll see: a <b>commit</b> is a saved version of your files. A <b>tag</b>
+    <p class="note">Registering early? Stage 1 opens on 1 Mar 2027. Stage briefs, deadlines and results go
+    to the team lead's email. Until then you can set up your repo<span data-needs="discord"> and join our
+    <a data-link="discord" href="#">Discord</a> to ask questions and talk with other entrants</span>.</p>
+    <p class="note">Four words you'll see. A <b>commit</b> is a saved version of your files. A <b>tag</b>
     marks the version you're submitting. A <b>fork</b> is your own copy of another team's repo, and a
     <b>pull request</b> offers your changes back to them.</p>
   </section>
@@ -127,25 +157,21 @@
         <p class="amount">$250</p>
         <p class="sub">Highest score in each of the six stages.</p>
       </div>
-      <div class="card">
-        <p class="label">Best design history</p>
-        <p class="amount amount-sm">Sponsor prize</p>
-      </div>
-      <div class="card">
-        <p class="label">Best documentation</p>
-        <p class="amount amount-sm">Sponsor prize</p>
-      </div>
-      <div class="card">
-        <p class="label">Best physical build</p>
-        <p class="amount amount-sm">Sponsor prize</p>
-      </div>
-      <div class="card">
-        <p class="label">Community reach</p>
-        <p class="amount amount-sm">Sponsor prize</p>
+      <!-- When a sponsor prize is confirmed, give its award a card of its own again. -->
+      <div class="card card-wide">
+        <p class="label">Special awards</p>
+        <ul class="awards">
+          <li>Best design history</li>
+          <li>Best documentation</li>
+          <li>Best physical build</li>
+          <li>Community reach</li>
+        </ul>
+        <p class="sub">Each wins a sponsor prize, announced here as sponsors confirm.</p>
       </div>
     </div>
-    <p class="note">$3,000 in cash prizes. The judges decide the four sponsor prizes. Community reach goes to the
-    entry with the highest community interest score, from stars and forks, across the stages. Sponsor prizes are announced here as sponsors confirm.</p>
+    <p class="note">$3,000 in cash across the grand prize and the six stage prizes. The judges decide the
+    special awards. Community reach goes to the entry with the highest community interest score, from stars
+    and forks, across the stages.</p>
   </section>
 
   <section id="dates">
@@ -162,14 +188,14 @@
         <p class="value">1 Mar 2027</p>
       </div>
       <div class="card">
-        <p class="label">Stage deadlines</p>
-        <p class="value">Last Sunday of each month</p>
-        <p class="sub mono">23:59 UTC</p>
-      </div>
-      <div class="card">
         <p class="label">Final deadline</p>
         <p class="value">29 Aug 2027</p>
         <p class="sub mono">23:59 UTC</p>
+      </div>
+      <div class="card">
+        <p class="label">Results</p>
+        <p class="value">Within 14 days</p>
+        <p class="sub">of each stage deadline</p>
       </div>
     </div>
     <p class="note">Joining late? You can still win the stage prize for any stage you submit. To be in the
@@ -193,19 +219,21 @@
 
   <section id="stages">
     <h2>Stages</h2>
-    <p class="section-lead">One stage per month. Each one builds on the last.</p>
+    <p class="section-lead">One stage per month, each building on the last. Every deadline is the last Sunday
+    of its month in 2027, at 23:59 UTC.</p>
+    <!-- These deadlines match the table under rule 3.1 in rules.html. -->
     <div class="card table-card">
       <table>
         <thead>
-          <tr><th>Stage</th><th>Month</th><th>Deliverable</th></tr>
+          <tr><th>Stage</th><th>Deadline</th><th>Deliverable</th></tr>
         </thead>
         <tbody>
-          <tr><td><span class="tag mono">stage-1</span> Thesis and airframe</td><td>Mar</td><td>A thesis stating what the drone is for and the requirements that follow. Arms, body, landing gear and motor mounts as STEP. Printable or machinable.</td></tr>
-          <tr><td><span class="tag mono">stage-2</span> Electronics layout</td><td>Apr</td><td>Flight controller, ESC and battery mounts, cable routing. PCB outline if custom.</td></tr>
-          <tr><td><span class="tag mono">stage-3</span> Propulsion</td><td>May</td><td>Motor selection and prop guards. Thrust math documented in the repo.</td></tr>
-          <tr><td><span class="tag mono">stage-4</span> Control and sensing</td><td>Jun</td><td>FC mount, camera or sensor gimbal, antenna placement.</td></tr>
-          <tr><td><span class="tag mono">stage-5</span> Integration</td><td>Jul</td><td>Full assembly, interference check, mass budget, BOM.</td></tr>
-          <tr><td><span class="tag mono">stage-6</span> Release and remix</td><td>Aug</td><td>A v1.0 release with build guide, BOM and drawings. Remix another team's entry for up to 50 of the stage's 100 points: fork it, change one subsystem, and open a pull request. You can submit your release without a remix.</td></tr>
+          <tr><td><span class="tag mono">stage-1</span> Thesis and airframe</td><td data-label="Deadline">28&nbsp;Mar</td><td>A thesis stating what the drone is for and the requirements that follow. Arms, body, landing gear and motor mounts as STEP. Printable or machinable.</td></tr>
+          <tr><td><span class="tag mono">stage-2</span> Electronics layout</td><td data-label="Deadline">25&nbsp;Apr</td><td>Flight controller, ESC and battery mounts, cable routing. PCB outline if custom.</td></tr>
+          <tr><td><span class="tag mono">stage-3</span> Propulsion</td><td data-label="Deadline">30&nbsp;May</td><td>Motor selection and prop guards. Thrust math documented in the repo.</td></tr>
+          <tr><td><span class="tag mono">stage-4</span> Control and sensing</td><td data-label="Deadline">27&nbsp;Jun</td><td>FC mount, camera or sensor gimbal, antenna placement.</td></tr>
+          <tr><td><span class="tag mono">stage-5</span> Integration</td><td data-label="Deadline">25&nbsp;Jul</td><td>Full assembly, interference check, mass budget, BOM.</td></tr>
+          <tr><td><span class="tag mono">stage-6</span> Release and remix</td><td data-label="Deadline">29&nbsp;Aug</td><td>A v1.0 release with build guide, BOM and drawings. Remix another team's entry for up to 50 of the stage's 100 points. Fork it, change one subsystem, and open a pull request. You can submit your release without a remix.</td></tr>
         </tbody>
       </table>
     </div>
@@ -225,25 +253,19 @@
     <p class="note">Stages 1 to 5 are scored out of 100 as above. Stage 6 scores your release (50) and your remix of
     another team's entry (50). The remix is optional, but skipping it gives up those 50 points. Every stage also offers
     up to 10 bonus points for merged pull requests from outside contributors, and up to 5 for a physical part.</p>
+    <p class="note">Community interest counts the stars and forks on your repo at each deadline. A fork counts
+    as two stars, and the total is scored relative to all entries.</p>
     <p class="note">There is no minimum commit count. Judges read your whole history, and recorded decisions and
     revisions that improve the design score higher than one finished upload on deadline day.</p>
   </section>
 
   <section id="rules">
-    <h2>Rules summary</h2>
-    <div class="card">
-      <ul class="checks">
-        <li>One public, open source Nurbly repo per team, with <code>nbc-2027</code> in its name or description.</li>
-        <li>All models as STEP, from any CAD tool.</li>
-        <li>Tag each stage <code>stage-N</code> before the deadline.</li>
-        <li>Start with a thesis: what your drone is for.</li>
-        <li>Civilian, lawful designs only.</li>
-        <li>Late joiners welcome from any stage.</li>
-        <li>Participants keep their IP and choose an open license.</li>
-        <li>You must be 18 or older.</li>
-      </ul>
+    <h2>Rules</h2>
+    <div class="card card-row">
+      <p>Designs must be civilian and lawful. The official rules cover everything on this page in full,
+      plus prize payment, licensing and the code of conduct.</p>
+      <a class="btn btn-outline" data-link="rules" href="#">Read the full rules</a>
     </div>
-    <p class="note"><a data-link="rules" href="#">Read the full rules</a></p>
   </section>
 
   <section id="faq">
@@ -296,6 +318,7 @@
     <h2>Ready to build?</h2>
     <p class="muted">Six stages. One drone. Every commit on the record.</p>
     <a class="btn btn-primary btn-lg" data-link="register" href="#">Register your team</a>
+    <p class="footer-alt" data-needs="discord">Not ready yet? <a data-link="discord" href="#">Join the Discord</a> and ask us anything first.</p>
     <p class="footer-sponsor">Want to sponsor the challenge? <a data-link="sponsor" href="#">Get in touch</a>.</p>
     <p class="footer-meta">
       Contact <a data-link="email" href="#"></a>
